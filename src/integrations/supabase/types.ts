@@ -86,6 +86,7 @@ export type Database = {
           created_at: string | null
           description: string | null
           id: string
+          location: string | null
           name: string
           owner_id: string
           updated_at: string | null
@@ -94,6 +95,7 @@ export type Database = {
           created_at?: string | null
           description?: string | null
           id?: string
+          location?: string | null
           name: string
           owner_id: string
           updated_at?: string | null
@@ -102,6 +104,7 @@ export type Database = {
           created_at?: string | null
           description?: string | null
           id?: string
+          location?: string | null
           name?: string
           owner_id?: string
           updated_at?: string | null
@@ -126,6 +129,30 @@ export type Database = {
           id?: string
           role?: string
           username?: string
+        }
+        Relationships: []
+      }
+      visits: {
+        Row: {
+          created_at: string
+          date: string
+          id: string
+          mess_id: string
+          student_id: string
+        }
+        Insert: {
+          created_at?: string
+          date?: string
+          id?: string
+          mess_id: string
+          student_id: string
+        }
+        Update: {
+          created_at?: string
+          date?: string
+          id?: string
+          mess_id?: string
+          student_id?: string
         }
         Relationships: []
       }
